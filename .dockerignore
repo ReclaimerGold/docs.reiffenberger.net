@@ -17,9 +17,8 @@ dockerfile
 Dockerfile
 .dockerignore
 
-# Documentation
+# Documentation - exclude only specific files, not all markdown
 README.md
-*.md
 
 # CI/CD
 .github/
