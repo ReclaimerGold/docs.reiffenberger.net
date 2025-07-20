@@ -20,9 +20,8 @@ FROM nginx:stable-alpine
 # Install dumb-init for proper signal handling in Kubernetes
 RUN apk add --no-cache dumb-init
 
-# Create non-root user for security
-RUN addgroup -g 1001 -S nginx && \
-    adduser -S -D -H -u 1001 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx
+# The nginx:stable-alpine image already has a nginx user/group
+# Just ensure the nginx user has the right permissions
 
 # Copy custom nginx configuration
 COPY --chown=nginx:nginx nginx.conf /etc/nginx/nginx.conf
