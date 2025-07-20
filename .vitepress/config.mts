@@ -53,6 +53,16 @@ export default defineConfig({
             { text: 'Wrong User IP behind Proxy', link: '/home-lab/media/jellyfin/troubleshooting/jellyfin-proxy-fix' },
           ]
         },
+      ],
+      '/home-lab/virtualization/proxmox': [
+        {
+          text: 'Maintenance & Utilities',
+          collapsed: false,
+          items: [
+            { text: 'Resize a VM Disk', link: '/home-lab/virtualization/proxmox/maintenance/resize-vm-disk' },
+            { text: 'Erase CEPH from PVE Node', link: '/home-lab/virtualization/proxmox/maintenance/erase-ceph-install' },
+          ]
+        },
       ]
     },
 
