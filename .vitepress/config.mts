@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "ReifDoc(k)",
   description: "A public documentation site filled with a myriad of resources to help people get more out of the internet.",
+  base: "/", // Explicitly set base path - change this if deployed under subpath
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
