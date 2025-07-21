@@ -2,10 +2,16 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "ReifDoc",
+  title: "ReifDoc(k)",
   description: "A public documentation site filled with a myriad of resources to help people get more out of the internet.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+
+    logo: {
+      light: '/assets/logo.svg',
+      dark: '/assets/logo.svg'
+    },
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Team', link: '/team' },
@@ -54,6 +60,22 @@ export default defineConfig({
           ]
         },
       ],
+      '/home-lab/virtualization/kubernetes': [
+        {
+          text: 'Getting Started',
+          collapsed: false,
+          items: [
+            { text: 'What is Kubernetes?', link: '/home-lab/virtualization/kubernetes/getting-started/what-is-it' },
+          ]
+        },
+        {
+          text: 'k3s Guides',
+          collapsed: false,
+          items: [
+            { text: 'Deploy HA k8s with k3sup', link: '/home-lab/virtualization/kubernetes/k3s/deploy-ha-k3s-with-k3sup' },
+          ]
+        },
+      ],
       '/home-lab/virtualization/proxmox': [
         {
           text: 'Maintenance & Utilities',
@@ -68,6 +90,16 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+
+    footer: {
+      //message: '<a href=""></a>
+      copyright: 'Copyright © Ryan Reiffenberger and contributors'
+    },
+
+    search: {
+      provider: 'local'
+    },
+
   }
 })

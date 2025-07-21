@@ -2,9 +2,12 @@
 layout: home
 
 hero:
-  name: "ReifDoc"
+  name: "ReifDoc(k)"
   text: "Get more out of your home lab, and your tech as a whole."
   tagline: A public documentation site filled with a myriad of resources to help people get more out of the internet.
+  image:
+    src: /assets/logo.png
+    alt: ReifDoc(k) Logo
   actions:
     - theme: brand
       text: Home Lab Guides
