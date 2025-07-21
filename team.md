@@ -22,7 +22,7 @@ const contributers = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/34190203?v=4',
     name: 'Jacob Banghart',
-    title: 'Collaborator',
+    title: 'Contributer',
     links: [
       { icon: 'github', link: 'https://github.com/JacobBanghart' }
     ]
