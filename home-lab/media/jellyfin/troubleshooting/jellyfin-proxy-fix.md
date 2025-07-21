@@ -28,3 +28,10 @@ You can fix this issue by following the steps below.
 3. Save the file, and restart the docker container
 
 > **Note:** This file WILL persist after container deletion, since it's mapped to your disk
+
+#### Add IP of Proxy to Known Proxies in Jellyfin
+
+1. Go to your Jellyfin Admin Dashboard
+2. Go to 'Networking'
+3. Go to 'Server Address Settings > Known proxies', and enter in the IP of your nginX proxy server
+4. Save
