@@ -14,19 +14,39 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Home', link: '/index' },
+      { 
+        text: 'Home Lab Guides',
+        items: [
+          { text: 'Overview', link: '/home-lab/index' },
+          { text: 'Automation', link: '/home-lab/automation/index' },
+          { text: 'Media Management', link: '/home-lab/media/index' },
+          { text: 'Virtualization', link: '/home-lab/virtualization/index' },
+        ] 
+      },
+      { 
+        text: 'Cloud Guides',
+        items: [
+          { text: 'Overview', link: '/cloud/index' },
+          { text: 'Vendor Guides', link: '/cloud/vendors/index' },
+        ] 
+      },
       { text: 'Team', link: '/team' },
     ],
 
     sidebar: {
       '/home-lab/': [
         {
-          text: 'Automation Guides',
-          collapsed: false,
-          items: [
-            { text: 'n8n Guides', link: '/home-lab/automation/n8n/index' }
-          ]
+          text: '⬅️ Back to Home',
+          link: '/index'
         },
+//        {
+//          text: 'Automation Guides',
+//          collapsed: false,
+//          items: [
+//            { text: 'n8n Guides', link: '/home-lab/automation/n8n/index' }
+//          ]
+//        },
         {
           text: 'Media Management',
           collapsed: false,
@@ -38,13 +58,17 @@ export default defineConfig({
           text: 'Virtualization Guides',
           collapsed: false,
           items: [
-            { text: 'Docker Guides', link: '/home-lab/virtualization/docker/index' },
+//            { text: 'Docker Guides', link: '/home-lab/virtualization/docker/index' },
             { text: 'Kubernetes Guides', link: '/home-lab/virtualization/kubernetes/index' },
             { text: 'Proxmox Guides', link: '/home-lab/virtualization/proxmox/index' },
           ]
         }
       ],
       '/home-lab/media/jellyfin': [
+        {
+          text: '⬅️ Back to Media',
+          link: '/home-lab/media'
+        },
         {
           text: 'Getting Started',
           collapsed: false,
@@ -63,6 +87,10 @@ export default defineConfig({
       ],
       '/home-lab/virtualization/kubernetes': [
         {
+          text: '⬅️ Back to Virtualization',
+          link: '/home-lab/virtualization'
+        },
+        {
           text: 'Getting Started',
           collapsed: false,
           items: [
@@ -79,6 +107,10 @@ export default defineConfig({
       ],
       '/home-lab/virtualization/proxmox': [
         {
+          text: '⬅️ Back to Virtualization',
+          link: '/home-lab/virtualization'
+        },
+        {
           text: 'Maintenance & Utilities',
           collapsed: false,
           items: [
@@ -86,7 +118,34 @@ export default defineConfig({
             { text: 'Erase CEPH from PVE Node', link: '/home-lab/virtualization/proxmox/maintenance/erase-ceph-install' },
           ]
         },
-      ]
+      ],
+      '/cloud/': [
+        {
+          text: '⬅️ Back to Home',
+          link: '/index'
+        },
+        {
+          text: 'Vendor Guides',
+          collapsed: false,
+          items: [
+            { text: 'Overview', link: '/cloud/index' },
+            { text: 'Bitnami Guides', link: '/cloud/vendors/bitnami/index' },
+          ]
+        },
+      ],
+      '/cloud/vendors/bitnami': [
+        {
+          text: '⬅️ Back to Vendors',
+          link: '/cloud/vendors'
+        },
+        {
+          text: 'Troubleshooting',
+          collapsed: false,
+          items: [
+            { text: 'Fix Permission Issues in WordPress', link: '/cloud/vendors/bitnami/troubleshooting/fix-permission-issues-in-wordpress' },
+          ]
+        },
+      ],
     },
 
     socialLinks: [
@@ -101,6 +160,5 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-
   }
 })
