@@ -6,7 +6,7 @@ Jellyfin is a free and open-source media system that puts you in control of your
 
 * **Self-Hosted Freedom:** Unlike many commercial media servers, Jellyfin is designed to be self-hosted. This means you install and run the server software on your own computer, server, or even a network-attached storage (NAS) device. You retain full control over your data, privacy, and how your media is accessed.
 * **Broad Device Support:** Jellyfin offers a wide range of client applications for various platforms, including:
-    * Web browsers (via its intuitive web interface)
+    * Web browsers (via their intuitive web interface)
     * Mobile devices (Android, iOS)
     * Smart TVs (Android TV, Apple TV, Roku, Fire TV)
     * Gaming consoles (Xbox, PlayStation)
@@ -28,4 +28,4 @@ When you want to watch a movie, your client device requests the content from you
 
 ## Is Jellyfin Right for You?
 
-If you're looking for a powerful, flexible, and privacy-focused way to manage and stream your personal media collection, Jellyfin is an excellent choice. It empowers you with complete control over your media empire, without being tied to proprietary services or recurring costs. While it might require a bit more initial setup than some commercial alternatives, the benefits of true ownership and open-source freedom are well worth the effort for many users.
+If you're looking for a powerful, flexible, and privacy-focused way to manage and stream your personal media collection, Jellyfin is an excellent choice. It empowers you with complete control over your media empire, without being tied to proprietary services or recurring costs. While it requires more initial setup than some commercial alternatives, the benefits of true ownership and open-source freedom are well worth the effort for many users.

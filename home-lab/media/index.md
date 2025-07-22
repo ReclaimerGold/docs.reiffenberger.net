@@ -12,4 +12,4 @@ You will primarily find tools, guides, resources, and scripts here that can be u
 
 **At the end of the day, you kind of just pick a spot and start.** A common place to start is to first follow the steps below to help you get the best experience.
 
-1. If you aren't familiar with, or don't have any experience with Docker, I highly recommend spending some time learning about Docker and how to use it. I recommend checking out Techno Tim's docker content ([Written](https://technotim.live/tags/docker/)), orNetworkChuck's docker content ([Videos](https://www.youtube.com/watch?v=eGz9DS-aIeY)).
+1. If you aren't familiar with, or don't have any experience with Docker, I highly recommend spending some time learning about Docker and how to use it. I recommend checking out Techno Tim's Docker content ([Written](https://technotim.live/tags/docker/)), or NetworkChuck's Docker content ([Videos](https://www.youtube.com/watch?v=eGz9DS-aIeY)).
