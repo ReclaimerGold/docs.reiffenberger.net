@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Copy package files and install dependencies first (for better layer caching)
 COPY package.json package-lock.json ./
-RUN npm ci --only=production && npm cache clean --force
+RUN npm ci --only=production
 
 # Copy source code and build
 COPY . .
