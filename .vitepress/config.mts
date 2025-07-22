@@ -31,6 +31,7 @@ export default defineConfig({
           { text: 'Vendor Guides', link: '/cloud/vendors/index' },
         ] 
       },
+      { text: 'Writeups', link: '/writeups/index' },
       { text: 'Team', link: '/team' },
     ],
 
@@ -143,6 +144,22 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Fix Permission Issues in WordPress', link: '/cloud/vendors/bitnami/troubleshooting/fix-permission-issues-in-wordpress' },
+          ]
+        },
+      ],
+      '/writeups': [
+        {
+          text: '⬅️ Back to Home',
+          link: '/index'
+        },
+        {
+          text: 'July 2025',
+          collapsed: false,
+          items: [
+            { 
+              text: 'Technical Incident Report - WordPress Site Experiencing Excessive CPU Utilization Due to Malicious Bot Activity', 
+              link: '/writeups/2025-07-22-technical-report-bot-traffic-mitigation-filter-everything-plugin' 
+            },
           ]
         },
       ],
