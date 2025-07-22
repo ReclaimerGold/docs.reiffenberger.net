@@ -4,7 +4,7 @@ This guide will walk you through the process of expanding the disk on a virtual 
 
 This guide is broken down based on the operating systems that I've ported this guide to so far.
 
-## Ubuntu <=24.04
+## Ubuntu Server <Badge type="tip" text="Last Tested On: 24.04" />
 
 ### Resize the disk from the Proxmox GUI.
 
