@@ -1,4 +1,7 @@
 {
+  "name": "docs.reiffenberger.net",
+  "version": "1.0.0",
+  "main": "index.js",
   "dependencies": {
     "vitepress": "^1.6.3"
   },
@@ -6,5 +9,16 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReclaimerGold/docs.reiffenberger.net.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReclaimerGold/docs.reiffenberger.net/issues"
+  },
+  "homepage": "https://docs.reiffenberger.net/",
+  "description": ""
 }

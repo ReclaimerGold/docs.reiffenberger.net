@@ -1,10 +1,10 @@
 # Deploy Highly-Available Kubernetes with `k3s` + `k3sup`
 
-`k3s` is a CNCF Cloud Native Landscape project that facilitates the quick-and-easy deployment of Kubernetes ("k8s"), which has allowed "k8s" to run on smaller devices, and more resource-constrained environments.
+`K3s` is a CNCF Cloud Native Landscape project that facilitates the quick-and-easy deployment of Kubernetes ("k8s"), which has allowed "k8s" to run on smaller devices, and more resource-constrained environments.
 
 
 
-**TL;DR?**: `k3s` is a great little all-in-one package of software(s) that allow you to be able to run Kubernetes without needing a large number of processor cores, or a large amount of RAM. You can run this on Raspberry Pis, Mini PCs, and more.
+**TL;DR?**: `k3s` is a great little all-in-one package of software that allows you to run Kubernetes without needing a large number of processor cores, or a large amount of RAM. You can run this on Raspberry Pis, Mini PCs, and more.
 
 ## Deploy your Virtual Machines
 
@@ -41,7 +41,7 @@ done
 4. Install k3s using this guide
    https://ma.ttias.be/deploying-highly-available-k3s-k3sup/#create-a-multi-master-ha-setup
 5. Install prerequisites for longhorn using this script:
-   ```bash
+```bash
 #!/bin/bash
 # Update and install dependencies
 echo "Updating system and installing prerequisites..."
@@ -74,7 +74,8 @@ systemctl is-active iscsid
 echo "Prerequisites installed successfully. Please ensure Kubernetes cluster is initialized before deploying Longhorn."
 ```
 6. Install Longhorn:
-   `helm install longhorn longhorn/longhorn --namespace longhorn-system --create-namespace --version 1.7.2`
+```bash
+   helm install longhorn longhorn/longhorn --namespace longhorn-system --create-namespace --version 1.7.2
 ```
 
 ## Inspiration Articles
