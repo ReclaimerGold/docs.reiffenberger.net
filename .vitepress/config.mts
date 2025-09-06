@@ -59,7 +59,7 @@ export default defineConfig({
           text: 'Virtualization Guides',
           collapsed: false,
           items: [
-//            { text: 'Docker Guides', link: '/home-lab/virtualization/docker/index' },
+            { text: 'Docker Guides', link: '/home-lab/virtualization/docker/index' },
             { text: 'Kubernetes Guides', link: '/home-lab/virtualization/kubernetes/index' },
             { text: 'Proxmox Guides', link: '/home-lab/virtualization/proxmox/index' },
           ]
@@ -83,6 +83,19 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Wrong User IP behind Proxy', link: '/home-lab/media/jellyfin/troubleshooting/jellyfin-proxy-fix' },
+          ]
+        },
+      ],
+      '/home-lab/virtualization/docker': [
+        {
+          text: '⬅️ Back to Virtualization',
+          link: '/home-lab/virtualization'
+        },
+        {
+          text: 'Beginner Guides',
+          collapsed: false,
+          items: [
+            { text: 'Install Docker on Windows', link: '/home-lab/virtualization/docker/install-docker-on-windows' },
           ]
         },
       ],
