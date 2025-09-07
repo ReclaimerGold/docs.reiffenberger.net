@@ -6,7 +6,7 @@ All client-specific information has been redacted to maintain confidentiality.
 
 ## Latest Writeups
 
-- **July 22, 2025**: [WordPress Bot Traffic Mitigation Using Cloudflare WAF and AWS Security Groups](/writeups/2025-07-22-technical-report-bot-traffic-mitigation-filter-everything-plugin.md)  
+- **July 22, 2025**: [Malicious Bot Attack Mitigated on WordPress](/writeups/incidents/2025-07-22-technical-report-bot-traffic-mitigation-filter-everything-plugin.md)  
   *Incident involving excessive CPU utilization on a WordPress site due to malicious bot activity targeting the Filter Everything Pro plugin.*
 
 ## Categories
