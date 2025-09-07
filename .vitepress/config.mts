@@ -33,7 +33,7 @@ export default defineConfig({
         items: [
           { text: 'Overview', link: '/home-lab/index' },
           { text: 'Getting Started', link: '/home-lab/getting-started/index' },
-          { text: 'AI & Machine Learning', link: '/home-lab/guides/ai/index' },
+          //{ text: 'AI & Machine Learning', link: '/home-lab/guides/ai/index' },
           { text: 'Containers & Orchestration', link: '/home-lab/guides/containers/index' },
           { text: 'Media Management', link: '/home-lab/guides/media/index' },
           { text: 'Networking & Security', link: '/home-lab/guides/networking/index' },
@@ -70,13 +70,6 @@ export default defineConfig({
           collapsed: false,
           items: [
             {
-              text: 'AI & Machine Learning',
-              collapsed: false,
-              items: [
-                { text: 'Set Up Private AI with Ollama', link: '/home-lab/guides/ai/ollama-setup' },
-              ]
-            },
-            {
               text: 'Containers & Orchestration',
               collapsed: false,
               items: [
@@ -98,7 +91,7 @@ export default defineConfig({
               text: 'Networking & Security',
               collapsed: false,
               items: [
-                { text: 'Secure WordPress with Cloudflare', link: '/home-lab/guides/networking/cloudflare-wordpress-security' },
+                //{ text: 'Secure WordPress with Cloudflare', link: '/home-lab/guides/networking/cloudflare-wordpress-security' },
               ]
             },
             {
