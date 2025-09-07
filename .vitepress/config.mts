@@ -149,8 +149,8 @@ export default defineConfig({
           collapsed: false,
           items: [
             { 
-              text: 'Technical Incident Report - WordPress Site Experiencing Excessive CPU Utilization Due to Malicious Bot Activity', 
-              link: '/writeups/2025-07-22-technical-report-bot-traffic-mitigation-filter-everything-plugin' 
+              text: 'Malicious Bot Attack Mitigated on WordPress',
+              link: '/writeups/incidents/2025-07-22-technical-report-bot-traffic-mitigation-filter-everything-plugin' 
             },
           ]
         },
