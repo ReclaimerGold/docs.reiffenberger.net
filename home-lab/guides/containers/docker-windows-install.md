@@ -34,9 +34,9 @@ No seriously. Don't skip this step. It helps all of the little 'bits' fall into 
 
 ### (Optional) Install Portainer for Easy Management
 
-> ⚠️ I recommend that you watch [this video](https://www.youtube.com/watch?v=iX0HbrfRyvc&t=85s&ab_channel=NetworkChuck) before continuing. It will help greatly, and __explain in great detail__ what we're doing here in about 12 minutes. If you want to save time, I'd recommend watching it at 1.25x
+> :warning: I recommend that you watch [this video](https://www.youtube.com/watch?v=iX0HbrfRyvc&t=85s&ab_channel=NetworkChuck) before continuing. It will help greatly, and __explain in great detail__ what we're doing here in about 12 minutes. If you want to save time, I'd recommend watching it at 1.25x
 
-> ℹ️ I may say that this is optional, but it's highly recommended if you're just getting started with Docker.
+> :information_source: I may say that this is optional, but it's highly recommended if you're just getting started with Docker.
 
 The last step will be to install Portainer which will give you a nice WebUI that will allow you to easily manage your Docker apps and services.
 
@@ -85,7 +85,7 @@ services:
 
 You will then take said configuration file above, and create something called a STACK which is in-essence, a wrapper for the 'Docker Compose' function.
 
-> ⚠️ **THIS PART IS IMPORTANT** ⚠️
+> :warning: **THIS PART IS IMPORTANT** :warning:
 
 **One thing to note about the configuration mentioned above! If you see an `environment:` section in the code, you will want to make sure that you put those variables in the 'environment' section of the Portainer stack.**
 

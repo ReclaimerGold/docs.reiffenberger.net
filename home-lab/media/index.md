@@ -6,7 +6,7 @@ This section contains information about media management services to help you se
 
 You will primarily find tools, guides, resources, and scripts here that can be utilized to build your own media server and management system. I use this to stream and organize home movies for my family, but there are a number of different reasons why you might want to set these solutions up.
 
-> **🚨 Disclaimer:** The resources and information provided in this category are intended for educational purposes only. I do not condone, support, or promote online or internet piracy in any form. Users are responsible for ensuring their actions comply with all applicable laws and terms of service. Please use these materials responsibly and ethically. A final note - If you like what you're consuming, you should pay for the work that the artist or creator put in.
+> **:rotating_light: Disclaimer:** The resources and information provided in this category are intended for educational purposes only. I do not condone, support, or promote online or internet piracy in any form. Users are responsible for ensuring their actions comply with all applicable laws and terms of service. Please use these materials responsibly and ethically. A final note - If you like what you're consuming, you should pay for the work that the artist or creator put in.
 
 ## How to Get Started
 

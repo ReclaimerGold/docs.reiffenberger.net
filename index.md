@@ -21,23 +21,23 @@ hero:
 
 features:
   - icon: 🚀
-    title: Quick Start Guides
-    details: Step-by-step tutorials designed to get you up and running fast with clear, actionable instructions.
+    title: Quick Setup
+    details: Get your home lab up and running with step-by-step guides for popular self-hosted applications.
   - icon: 📚
-    title: Comprehensive Documentation  
-    details: In-depth guides covering every aspect of home lab setup, cloud deployment, and system administration.
+    title: Comprehensive Guides
+    details: From containers to networking, find detailed tutorials for all aspects of home lab management.
   - icon: 🛠️
-    title: Tools & Resources
-    details: Curated collection of tools, scripts, and templates to accelerate your projects and workflows.
+    title: Practical Solutions
+    details: Real-world troubleshooting guides and best practices from hands-on experience.
   - icon: 🎯
-    title: Best Practices & Lessons
-    details: Learn from real-world experience and avoid common pitfalls with proven strategies and insights.
+    title: Focused Content
+    details: Curated resources that cut through the noise to deliver exactly what you need.
   - icon: 💻
-    title: Code Examples & Scripts
-    details: Ready-to-use code snippets, configuration files, and automation scripts for immediate implementation.
+    title: Modern Stack
+    details: Covering the latest technologies and tools in the home lab ecosystem.
   - icon: 📝
-    title: Technical Writeups
-    details: Detailed analysis of complex problems, solutions, and technical deep-dives from real projects.
+    title: Community Driven
+    details: Built with feedback from the home lab community to address real needs.
 ---
 
 ## So why does this website exist? 🤷

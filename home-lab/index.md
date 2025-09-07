@@ -5,7 +5,7 @@ This section contains all the resources related to home labbing, or running serv
 
 ---
 
-## 🚀 Getting Started
+## :rocket: Getting Started
 
 New to home labs? Start here to understand the fundamentals and plan your setup.
 
@@ -14,7 +14,7 @@ New to home labs? Start here to understand the fundamentals and plan your setup.
 
 ---
 
-## 📚 Guides by Category
+## :books: Guides by Category
 
 ### AI & Machine Learning
 
@@ -63,7 +63,7 @@ New to home labs? Start here to understand the fundamentals and plan your setup.
 
 ---
 
-## 🔧 Reference & Troubleshooting
+## :wrench: Reference & Troubleshooting
 
 * **[Reference Materials](/home-lab/reference/)** - Quick scripts, cheat sheets, and reference guides
 * **[Troubleshooting](/home-lab/troubleshooting/)** - Common issues and their solutions

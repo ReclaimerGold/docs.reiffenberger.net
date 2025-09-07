@@ -121,7 +121,7 @@ export default defineConfig({
       ],
       '/cloud/': [
         {
-          text: '⬅️ Back to Home',
+          text: ':arrow_left: Back to Home',
           link: '/index'
         },
         {
