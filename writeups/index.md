@@ -1,7 +1,17 @@
 # Technical Writeups
 
-This section contains technical writeups (client information redacted) that I have put together when solving incidents for clients that I have worked with in the past. The hope is that the steps taken in some of these resources might help you to solve problems with your own infrastructure and services, or even just to get a better experience when using them.
+Welcome to the Technical Writeups section. Here, you'll find detailed reports on real-world incidents and solutions I've encountered while working with clients. These writeups provide insights into troubleshooting, security, and performance optimization for various technologies.
 
-## Article History
+All client-specific information has been redacted to maintain confidentiality.
 
-- 2025-07-22 - [Technical Incident Report - WordPress Site Experiencing Excessive CPU Utilization Due to Malicious Bot Activity](/writeups/2025-07-22-technical-report-bot-traffic-mitigation-filter-everything-plugin.md)
+## Latest Writeups
+
+- **July 22, 2025**: [WordPress Bot Traffic Mitigation Using Cloudflare WAF and AWS Security Groups](/writeups/2025-07-22-technical-report-bot-traffic-mitigation-filter-everything-plugin.md)  
+  *Incident involving excessive CPU utilization on a WordPress site due to malicious bot activity targeting the Filter Everything Pro plugin.*
+
+## Categories
+
+- **Security & Performance**: Reports on mitigating attacks, optimizing resources, and securing web applications.
+- **Infrastructure**: Solutions for cloud deployments, containerization, and server management.
+
+*More writeups will be added as new incidents are resolved. If you have a similar issue, these reports may provide valuable guidance.*
