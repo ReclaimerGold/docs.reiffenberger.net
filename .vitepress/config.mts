@@ -1,10 +1,23 @@
 import { defineConfig } from 'vitepress'
+import { createRedirectMiddleware } from './redirects'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "ReifDoc(k)",
   description: "A public documentation site filled with a myriad of resources to help people get more out of the internet.",
   base: "/", // Explicitly set base path - change this if deployed under subpath
+  lastUpdated: true,
+
+  vite: {
+    plugins: [
+      {
+        name: 'redirect-old-urls',
+        configureServer(server) {
+          server.middlewares.use(createRedirectMiddleware());
+        }
+      }
+    ]
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
@@ -16,16 +29,20 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/index' },
       { 
-        text: 'Home Lab Guides',
+        text: 'Home Lab',
         items: [
           { text: 'Overview', link: '/home-lab/index' },
-          { text: 'Automation', link: '/home-lab/automation/index' },
-          { text: 'Media Management', link: '/home-lab/media/index' },
-          { text: 'Virtualization', link: '/home-lab/virtualization/index' },
+          { text: 'Getting Started', link: '/home-lab/getting-started/index' },
+          { text: 'AI & Machine Learning', link: '/home-lab/guides/ai/index' },
+          { text: 'Containers & Orchestration', link: '/home-lab/guides/containers/index' },
+          { text: 'Media Management', link: '/home-lab/guides/media/index' },
+          { text: 'Networking & Security', link: '/home-lab/guides/networking/index' },
+          { text: 'Virtualization', link: '/home-lab/guides/virtualization/index' },
+          { text: 'Automation', link: '/home-lab/guides/automation/index' },
         ] 
       },
       { 
-        text: 'Cloud Guides',
+        text: 'Cloud',
         items: [
           { text: 'Overview', link: '/cloud/index' },
           { text: 'Vendor Guides', link: '/cloud/vendors/index' },
@@ -41,97 +58,66 @@ export default defineConfig({
           text: '⬅️ Back to Home',
           link: '/index'
         },
-//        {
-//          text: 'Automation Guides',
-//          collapsed: false,
-//          items: [
-//            { text: 'n8n Guides', link: '/home-lab/automation/n8n/index' }
-//          ]
-//        },
         {
-          text: 'Media Management',
+          text: 'Getting Started',
           collapsed: false,
           items: [
-            { text: 'Jellyfin Guides', link: '/home-lab/media/jellyfin/index' },
+            { text: 'Overview', link: '/home-lab/getting-started/index' },
           ]
         },
         {
-          text: 'Virtualization Guides',
+          text: 'Guides by Category',
           collapsed: false,
           items: [
-            { text: 'Docker Guides', link: '/home-lab/virtualization/docker/index' },
-            { text: 'Kubernetes Guides', link: '/home-lab/virtualization/kubernetes/index' },
-            { text: 'Proxmox Guides', link: '/home-lab/virtualization/proxmox/index' },
+            {
+              text: 'AI & Machine Learning',
+              collapsed: false,
+              items: [
+                { text: 'Set Up Private AI with Ollama', link: '/home-lab/guides/ai/ollama-setup' },
+              ]
+            },
+            {
+              text: 'Containers & Orchestration',
+              collapsed: false,
+              items: [
+                { text: 'Install Docker on Windows', link: '/home-lab/guides/containers/docker-windows-install' },
+                { text: 'Introduction to Kubernetes', link: '/home-lab/guides/containers/kubernetes-intro' },
+                { text: 'Deploy HA k3s Cluster', link: '/home-lab/guides/containers/k3s-ha-deployment' },
+              ]
+            },
+            {
+              text: 'Media Management',
+              collapsed: false,
+              items: [
+                { text: 'Introduction to Jellyfin', link: '/home-lab/guides/media/jellyfin-intro' },
+                { text: 'Jellyfin Hardware Selection', link: '/home-lab/guides/media/jellyfin-hardware-selection' },
+                { text: 'Fix Jellyfin Proxy Issues', link: '/home-lab/guides/media/jellyfin-proxy-troubleshooting' },
+              ]
+            },
+            {
+              text: 'Networking & Security',
+              collapsed: false,
+              items: [
+                { text: 'Secure WordPress with Cloudflare', link: '/home-lab/guides/networking/cloudflare-wordpress-security' },
+              ]
+            },
+            {
+              text: 'Virtualization',
+              collapsed: false,
+              items: [
+                { text: 'Resize Proxmox VM Disk', link: '/home-lab/guides/virtualization/proxmox-disk-resize' },
+                { text: 'Remove CEPH from Proxmox', link: '/home-lab/guides/virtualization/proxmox-ceph-removal' },
+              ]
+            },
+            {
+              text: 'Automation',
+              collapsed: false,
+              items: [
+                { text: 'Coming Soon...', link: '/home-lab/guides/automation/index' },
+              ]
+            }
           ]
         }
-      ],
-      '/home-lab/media/jellyfin': [
-        {
-          text: '⬅️ Back to Media',
-          link: '/home-lab/media'
-        },
-        {
-          text: 'Getting Started',
-          collapsed: false,
-          items: [
-            { text: 'What is Jellyfin?', link: '/home-lab/media/jellyfin/getting-started/what-is-it' },
-            { text: 'Selecting Your Hardware', link: '/home-lab/media/jellyfin/getting-started/selecting-your-hardware' }
-          ]
-        },
-        {
-          text: 'Troubleshooting Guides',
-          collapsed: false,
-          items: [
-            { text: 'Wrong User IP behind Proxy', link: '/home-lab/media/jellyfin/troubleshooting/jellyfin-proxy-fix' },
-          ]
-        },
-      ],
-      '/home-lab/virtualization/docker': [
-        {
-          text: '⬅️ Back to Virtualization',
-          link: '/home-lab/virtualization'
-        },
-        {
-          text: 'Beginner Guides',
-          collapsed: false,
-          items: [
-            { text: 'Install Docker on Windows', link: '/home-lab/virtualization/docker/install-docker-on-windows' },
-          ]
-        },
-      ],
-      '/home-lab/virtualization/kubernetes': [
-        {
-          text: '⬅️ Back to Virtualization',
-          link: '/home-lab/virtualization'
-        },
-        {
-          text: 'Getting Started',
-          collapsed: false,
-          items: [
-            { text: 'What is Kubernetes?', link: '/home-lab/virtualization/kubernetes/getting-started/what-is-it' },
-          ]
-        },
-        {
-          text: 'k3s Guides',
-          collapsed: false,
-          items: [
-            { text: 'Deploy HA k8s with k3sup', link: '/home-lab/virtualization/kubernetes/k3s/deploy-ha-k3s-with-k3sup' },
-          ]
-        },
-      ],
-      '/home-lab/virtualization/proxmox': [
-        {
-          text: '⬅️ Back to Virtualization',
-          link: '/home-lab/virtualization'
-        },
-        {
-          text: 'Maintenance & Utilities',
-          collapsed: false,
-          items: [
-            { text: 'Resize a VM Disk', link: '/home-lab/virtualization/proxmox/maintenance/resize-vm-disk' },
-            { text: 'Erase CEPH from PVE Node', link: '/home-lab/virtualization/proxmox/maintenance/erase-ceph-install' },
-          ]
-        },
       ],
       '/cloud/': [
         {
@@ -184,7 +170,7 @@ export default defineConfig({
 
     footer: {
       //message: '<a href=""></a>
-      copyright: 'Copyright © Ryan Reiffenberger and contributors'
+      copyright: 'Copyright © 2025 Ryan Reiffenberger and contributors. All rights reserved.'
     },
 
     search: {

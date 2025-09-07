@@ -1,0 +1,33 @@
+# Redirects for old documentation URLs to new structure
+# This file handles production redirects for Netlify/Vercel/etc
+
+# AI/ML redirects
+/home-lab/ai/ollama/set-up-a-private-ai-with-ollama /home-lab/guides/ai/ollama-setup 301
+
+# Media redirects
+/home-lab/media/jellyfin/getting-started/what-is-it /home-lab/guides/media/jellyfin-intro 301
+/home-lab/media/jellyfin/getting-started/selecting-your-hardware /home-lab/guides/media/jellyfin-hardware-selection 301
+/home-lab/media/jellyfin/troubleshooting/jellyfin-proxy-fix /home-lab/guides/media/jellyfin-proxy-troubleshooting 301
+
+# Container redirects
+/home-lab/virtualization/docker/install-docker-on-windows /home-lab/guides/containers/docker-windows-install 301
+/home-lab/virtualization/kubernetes/getting-started/what-is-it /home-lab/guides/containers/kubernetes-intro 301
+/home-lab/virtualization/kubernetes/k3s/deploy-ha-k3s-with-k3sup /home-lab/guides/containers/k3s-ha-deployment 301
+
+# Virtualization redirects
+/home-lab/virtualization/proxmox/maintenance/resize-vm-disk /home-lab/guides/virtualization/proxmox-disk-resize 301
+/home-lab/virtualization/proxmox/maintenance/erase-ceph-install /home-lab/guides/virtualization/proxmox-ceph-removal 301
+
+# Software/Networking redirects
+/home-lab/software/harden-wordpress-security-with-cloudflare-waf /home-lab/guides/networking/cloudflare-wordpress-security 301
+
+# Section index redirects
+/home-lab/media/index /home-lab/guides/media/index 301
+/home-lab/media/jellyfin/index /home-lab/guides/media/index 301
+/home-lab/virtualization/index /home-lab/guides/containers/index 301
+/home-lab/virtualization/docker/index /home-lab/guides/containers/index 301
+/home-lab/virtualization/kubernetes/index /home-lab/guides/containers/index 301
+/home-lab/virtualization/proxmox/index /home-lab/guides/virtualization/index 301
+/home-lab/software/index /home-lab/guides/networking/index 301
+/home-lab/automation/index /home-lab/guides/automation/index 301
+/home-lab/automation/n8n/index /home-lab/guides/automation/index 301
