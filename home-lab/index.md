@@ -1,9 +1,6 @@
-
 # Home Lab Guides
 
 This section contains all the resources related to home labbing, or running services within your home. It's designed to help you set up and manage your own personal servers, from media management to virtualization and beyond.
-
----
 
 ## :rocket: Getting Started
 
@@ -11,8 +8,6 @@ New to home labs? Start here to understand the fundamentals and plan your setup.
 
 * **[Getting Started Guide](/home-lab/getting-started/index)**
     * Learn what a home lab is, how to get started, and hardware considerations for building your own.
-
----
 
 ## :books: Guides by Category
 
@@ -60,8 +55,6 @@ New to home labs? Start here to understand the fundamentals and plan your setup.
 
 * **[Automation Guides](/home-lab/guides/automation/index)**
     * Coming soon: workflow automation, infrastructure as code, and monitoring solutions.
-
----
 
 ## :wrench: Reference & Troubleshooting
 
