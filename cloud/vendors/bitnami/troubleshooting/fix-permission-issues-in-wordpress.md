@@ -14,6 +14,7 @@ sudo find /opt/bitnami/wordpress -type d -exec chmod 775 {} \;
 sudo find /opt/bitnami/wordpress -type f -exec chmod 664 {} \;
 sudo chmod 640 /opt/bitnami/wordpress/wp-config.php
 
+# You shouldn't have to run the lines below, but if you'd rather approach the repair using the existing symlinks, you can use the modified commands below
 sudo chown -R bitnami:daemon /bitnami/wordpress
 sudo find /bitnami/wordpress -type d -exec chmod 775 {} \;
 sudo find /bitnami/wordpress -type f -exec chmod 664 {} \;
