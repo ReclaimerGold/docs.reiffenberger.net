@@ -22,7 +22,7 @@ You can fix this issue by following the steps below.
 
 #### Update your Jellyfin Network Configuration 
 
-1. Go to your NAS and find the jellyfin `/config` folder in your docker storage (not in Portainer, in your file manager in your NAS) 
+1. Go to your NAS and find the jellyfin `/config` folder in your docker storage location, whether it be by directly 'shelling' into the Docker container, or accessing your network storage directly.
 2. Find the `network.xml` file and add the line:
    `<IsBehindProxy>true</IsBehindProxy>`
 3. Save the file, and restart the docker container
