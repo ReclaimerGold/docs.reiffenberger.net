@@ -14,26 +14,22 @@ First, you'll need virtual machines for your `k3s` cluster to run on.
    *Must deploy a minimum of 3 for Quorum (n/2)+1*
 2. Copy SSH Keys to Machines
 
-```bash
-#!/bin/bash
+   ```bash
+   # Define the array of IP addresses
+   ips=("192.168.1.151" "192.168.1.152" "192.168.1.153") # Don't worry, these aren't my real nodes... ;)
+   first_ip="${ips[0]}"
+   ssh_key="~/.ssh/devbox"
 
-# Define the array of IP addresses
-ips=("192.168.1.151" "192.168.1.152" "192.168.1.153") # Don't worry, these aren't my real nodes... ;)
-first_ip="${ips[0]}"
-ssh_key="~/.ssh/devbox"
+   # Loop over the array of IPs
+   for i in "${!ips[@]}"; do
+   ip="${ips[$i]}"
 
-# Loop over the array of IPs
-for i in "${!ips[@]}"; do
-ip="${ips[$i]}"
+   # Copy the SSH Key to the Server
+   ssh-copy-id -i ~/.ssh/devbox johndoe@"$ip"
 
-# Copy the SSH Key to the Server
-ssh-copy-id -i ~/.ssh/devbox johndoe@"$ip"
-
-# Add 'johndoe ALL=(ALL) NOPASSWD: ALL' to the sudoers file
-ssh -i devbox johndoe@"$ip" "echo 'johndoe ALL=(ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers.d/johndoe"
-
-done
-```
+   # Add 'johndoe ALL=(ALL) NOPASSWD: ALL' to the sudoers file
+   ssh -i devbox johndoe@"$ip" "echo 'johndoe ALL=(ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers.d/johndoe"
+   ```
 
 3. Enable password-less sudo
    `sudo visudo
@@ -41,41 +37,43 @@ done
 4. Install k3s using this guide
    https://ma.ttias.be/deploying-highly-available-k3s-k3sup/#create-a-multi-master-ha-setup
 5. Install prerequisites for longhorn using this script:
+
    ```bash
-#!/bin/bash
-# Update and install dependencies
-echo "Updating system and installing prerequisites..."
-sudo apt update -y && sudo apt upgrade -y
-sudo apt install -y curl gnupg2 software-properties-common apt-transport-https ca-certificates
+   # Update and install dependencies
+   echo "Updating system and installing prerequisites..."
+   sudo apt update -y && sudo apt upgrade -y
+   sudo apt install -y curl gnupg2 software-properties-common apt-transport-https ca-certificates
 
-# Configure sysctl for Kubernetes networking
-echo "Configuring sysctl for Kubernetes networking..."
-cat <<EOF | sudo tee /etc/sysctl.d/kubernetes.conf
-net.bridge.bridge-nf-call-ip6tables = 1
-net.bridge.bridge-nf-call-iptables = 1
-EOF
-sudo sysctl --system
+   # Configure sysctl for Kubernetes networking
+   echo "Configuring sysctl for Kubernetes networking..."
+   cat <<EOF | sudo tee /etc/sysctl.d/kubernetes.conf
+   net.bridge.bridge-nf-call-ip6tables = 1
+   net.bridge.bridge-nf-call-iptables = 1
+   EOF
+   sudo sysctl --system
 
-# Install Longhorn prerequisites
-echo "Installing Longhorn prerequisites..."
-sudo apt install -y open-iscsi
-sudo systemctl enable iscsid
-sudo systemctl start iscsid
-sudo apt-get install cifs-utils
-sudo apt-get install nfs-common
+   # Install Longhorn prerequisites
+   echo "Installing Longhorn prerequisites..."
+   sudo apt install -y open-iscsi
+   sudo systemctl enable iscsid
+   sudo systemctl start iscsid
+   sudo apt-get install cifs-utils
+   sudo apt-get install nfs-common
 
-# Verify installation
-echo "Verifying installation..."
-kubectl version --client
-kubeadm version
-containerd --version
-systemctl is-active iscsid
+   # Verify installation
+   echo "Verifying installation..."
+   kubectl version --client
+   kubeadm version
+   containerd --version
+   systemctl is-active iscsid
 
-echo "Prerequisites installed successfully. Please ensure Kubernetes cluster is initialized before deploying Longhorn."
-```
+   echo "Prerequisites installed successfully. Please ensure Kubernetes cluster is initialized before deploying Longhorn."
+   ```
 6. Install Longhorn:
+
+   ``` bash
    `helm install longhorn longhorn/longhorn --namespace longhorn-system --create-namespace --version 1.7.2`
-```
+   ```
 
 ## Inspiration Articles
 
