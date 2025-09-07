@@ -13,21 +13,31 @@ hero:
       text: Home Lab Guides
       link: /home-lab
     - theme: alt
+      text: Cloud Resources
+      link: /cloud
+    - theme: alt
       text: Find Me on Github
       link: https://github.com/ReclaimerGold
-    - theme: none
-      text: CTRL+K to Search
 
 features:
-  - icon: ❤️
-    title: 100% Open-Source documentation
-    details: None of this documentation is held behind any paywall and will never be sold to another company. I only bill for consultative services if the need should arise.
-  - icon: 👶
-    title: Simplified Guides for Beginners
-    details: Every guide is written with the assumption that you don't have prior knowledge. I work to ensure that I reference other resources that may be important to read beforehand.
-  - icon: 📋
-    title: Easy Copy/Paste Scripts
-    details: All of the code and scripts in my docuemntation site are formatted to be easily readable, and allow for easy copy/pasting into tools like your console, Portainer, and more.
+  - icon: 🚀
+    title: Quick Start Guides
+    details: Step-by-step tutorials designed to get you up and running fast with clear, actionable instructions.
+  - icon: �
+    title: Comprehensive Documentation  
+    details: In-depth guides covering every aspect of home lab setup, cloud deployment, and system administration.
+  - icon: 🛠️
+    title: Tools & Resources
+    details: Curated collection of tools, scripts, and templates to accelerate your projects and workflows.
+  - icon: 🎯
+    title: Best Practices & Lessons
+    details: Learn from real-world experience and avoid common pitfalls with proven strategies and insights.
+  - icon: �
+    title: Code Examples & Scripts
+    details: Ready-to-use code snippets, configuration files, and automation scripts for immediate implementation.
+  - icon: 📝
+    title: Technical Writeups
+    details: Detailed analysis of complex problems, solutions, and technical deep-dives from real projects.
 ---
 
 ## So why does this website exist? 🤷
