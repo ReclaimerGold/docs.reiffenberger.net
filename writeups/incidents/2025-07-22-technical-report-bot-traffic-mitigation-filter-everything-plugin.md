@@ -1,4 +1,4 @@
-# Technical Incident Report - WordPress Site Experiencing Excessive CPU Utilization Due to Malicious Bot Activity
+# WordPress Site Experiencing Excessive CPU Utilization Due to Malicious Bot Activity
 
 **Date:** July 22, 2025 | **Author:** Ryan Reiffenberger - Falls Technology Group, LLC
 
