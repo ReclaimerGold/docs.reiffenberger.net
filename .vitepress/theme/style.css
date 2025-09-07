@@ -193,20 +193,51 @@
   filter: drop-shadow(4px 4px 8px var(--vp-c-logo-shadow));
 }
 
-/* Add subtle marine-themed accent - emoji-friendly approach */
-.vp-doc h1, .vp-doc h2 {
+/* Base styling for all headings */
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6 {
   font-weight: var(--vp-font-weight-bold);
   letter-spacing: -0.025em;
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
 }
 
-/* Optional: Apply gradient to specific headings that don't contain emojis */
-.vp-doc h1.gradient-text, 
-.vp-doc h2.gradient-text {
-  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+/* Apply gradient only to text spans within headings, not the whole heading */
+.vp-doc h1 .gradient-text, 
+.vp-doc h2 .gradient-text, 
+.vp-doc h3 .gradient-text, 
+.vp-doc h4 .gradient-text, 
+.vp-doc h5 .gradient-text, 
+.vp-doc h6 .gradient-text {
+  background: -webkit-linear-gradient(
+    135deg,
+    #20E5E5 0%,
+    #00D4DD 30%,
+    #4ECDC4 60%,
+    #7ED321 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: var(--vp-c-brand-1); /* fallback */
+}
+
+/* For headings without emojis, apply gradient directly */
+.vp-doc h1.text-only, 
+.vp-doc h2.text-only, 
+.vp-doc h3.text-only, 
+.vp-doc h4.text-only, 
+.vp-doc h5.text-only, 
+.vp-doc h6.text-only {
+  background: -webkit-linear-gradient(
+    135deg,
+    #20E5E5 0%,
+    #00D4DD 30%,
+    #4ECDC4 60%,
+    #7ED321 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--vp-c-brand-1); /* fallback */
 }
 
 /* Enhanced typography for better readability */
@@ -228,10 +259,12 @@
 
 .vp-doc h2 {
   font-size: 2rem;
+  font-weight: var(--vp-font-weight-bold);
 }
 
 .vp-doc h3 {
   font-size: 1.5rem;
+  font-weight: var(--vp-font-weight-bold);
 }
 
 /* Code blocks with JetBrains Mono */
