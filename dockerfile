@@ -1,8 +1,8 @@
 # Stage 1: Build the VitePress site
 FROM node:20-alpine AS builder
 
-# Install dumb-init for proper signal handling
-RUN apk add --no-cache dumb-init
+# Install dumb-init and git (git needed for VitePress lastUpdated feature)
+RUN apk add --no-cache dumb-init git
 
 WORKDIR /app
 
