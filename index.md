@@ -23,7 +23,7 @@ features:
   - icon: 🚀
     title: Quick Start Guides
     details: Step-by-step tutorials designed to get you up and running fast with clear, actionable instructions.
-  - icon: �
+  - icon: 📚
     title: Comprehensive Documentation  
     details: In-depth guides covering every aspect of home lab setup, cloud deployment, and system administration.
   - icon: 🛠️
@@ -32,7 +32,7 @@ features:
   - icon: 🎯
     title: Best Practices & Lessons
     details: Learn from real-world experience and avoid common pitfalls with proven strategies and insights.
-  - icon: �
+  - icon: 💻
     title: Code Examples & Scripts
     details: Ready-to-use code snippets, configuration files, and automation scripts for immediate implementation.
   - icon: 📝
