@@ -169,7 +169,7 @@ export default defineConfig({
     ],
 
     footer: {
-      //message: '<a href=""></a>
+      message: '<a href="/css-demo" style="color: var(--vp-c-brand-1); text-decoration: none;">🎨 View CSS Demo</a>',
       copyright: 'Copyright © 2025 Ryan Reiffenberger and contributors. All rights reserved.'
     },
 
