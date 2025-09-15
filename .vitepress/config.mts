@@ -57,6 +57,7 @@ export default defineConfig({
       },
       { text: 'Writeups', link: '/writeups/index' },
       { text: 'Team', link: '/team' },
+      { text: 'Services', link: '/services/index' },
     ],
 
     sidebar: {
