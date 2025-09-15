@@ -176,7 +176,7 @@ Style notes:
 
 ## Links
 
-- Internal: [Home Lab](/home-lab)
+- Internal: [Home](/index)
 - External: [GitHub @ReclaimerGold](https://github.com/ReclaimerGold)
 - Emphasized inline link inside text for context and flow
 
@@ -188,12 +188,12 @@ Accessibility:
 Use alt text and captions. Prefer SVG for logos/icons when available.
 
 <figure>
-  <img src="/assets/logo.svg" alt="ReifDoc(k) logo" width="180" />
+  <img src="/public/assets/logo.svg" alt="ReifDoc(k) logo" width="180" />
   <figcaption>Primary site logo (SVG). Scales crisply at any size.</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/logo.png" alt="ReifDoc(k) logo PNG" width="180" />
+  <img src="/public/assets/logo.png" alt="ReifDoc(k) logo PNG" width="180" />
   <figcaption>PNG fallback for environments that require raster images.</figcaption>
 </figure>
 
